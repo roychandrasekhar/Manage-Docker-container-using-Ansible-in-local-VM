@@ -56,7 +56,14 @@ Manage Docker container using Ansible in local VM
     
     I re-confirm by by `ssh root@172.17.0.2` without giving password.
     
-5. Then run the ansible using Docker container IP in inventory.txt file
+5. Make sure your all docker container is already have `python` install in it. In my case i do by SSH into it.
+
+        ssh root@172.17.0.2
+        apt-get update
+        apt-get install -y python
+        
+
+7. Then run the ansible using Docker container IP in inventory.txt file
     `ansible target* -m ping -i inventory.txt`
     
     ![](https://i.imgur.com/fL1RTCk.jpg)
