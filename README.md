@@ -1,4 +1,4 @@
-# Manage-Docker-container-using-Ansible-in-local-VM
+# Manage Docker container using Ansible in local VM
 Manage Docker container using Ansible in local VM
 
 # How to manage Docker container using Ansible in local VM
@@ -40,7 +40,7 @@ Manage Docker container using Ansible in local VM
         docker run -it -d mmumshad/ubuntu-ssh-enabled
         
         
-    ![image](https://hackmd.io/_uploads/H1ujHfrOa.png)
+    ![](https://i.imgur.com/v8WbQvB.png)
 
     Now get the IP address from all this Docker containers
         
@@ -59,6 +59,6 @@ Manage Docker container using Ansible in local VM
 5. Then run the ansible using Docker container IP in inventory.txt file
     `ansible target* -m ping -i inventory.txt`
     
-    ![Screenshot 2024-01-05 112923.PNG](https://hackmd.io/_uploads/HygA5zH_a.jpg)
+    ![](https://i.imgur.com/fL1RTCk.jpg)
 
 Now i am ready to manage the Docker container using Ansible
